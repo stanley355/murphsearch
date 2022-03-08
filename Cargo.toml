@@ -6,3 +6,10 @@ edition = "2021"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+actix-web = { version = "3", features = ["openssl"] }
+openssl ="0.10"
+postgres = "0.19"
+postgres-openssl = "0.5.0"
+serde = "1"
+serde_json = "1"
+dotenv = "0.15"
