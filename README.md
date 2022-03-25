@@ -24,3 +24,4 @@ Response (Array):
 ]
 ```
 Example:
+![image](https://user-images.githubusercontent.com/53996155/160053995-82814b45-f89f-48a5-83b3-adaa2cdc5dad.png)
