@@ -1,4 +1,4 @@
-name: Release Build pipleine
+name: Staging Build pipleine
 
 on:
   push:
