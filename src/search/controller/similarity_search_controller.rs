@@ -14,7 +14,7 @@ impl SimilaritySearchController {
       if word.contains(target_word) {
         let result = SimilarityResult {
           word: word,
-          similarity: 50.0
+          similarity: 50.0,
         };
         new_word_array.push(result);
       }
@@ -52,5 +52,29 @@ impl SimilaritySearchController {
     }
 
     return new_word_array;
+  }
+
+  pub fn sort_similarity_result(
+    result_list: Box<Vec<SimilarityResult>>,
+  ) -> Box<Vec<SimilarityResult>> {
+    let mut list = result_list;
+
+    if !list.is_empty() {
+      let mut count = 0;
+
+      while count < list.len() - 1 {
+        let prev_index = list[count].clone();
+        let next_index = list[count + 1].clone();
+
+        if prev_index.similarity < next_index.similarity {
+          list[count] = next_index;
+          list[count + 1] = prev_index;
+        }
+
+        count += 1;
+      }
+    }
+
+    return list;
   }
 }

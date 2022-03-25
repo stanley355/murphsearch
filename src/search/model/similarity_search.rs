@@ -15,7 +15,9 @@ impl SimilaritySearch {
       result = Controller::check_by_letter(self)
     }
 
-    return result;
+    let sorted_result = Controller::sort_similarity_result(result);
+
+    return sorted_result;
   }
 }
 
