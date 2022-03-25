@@ -14,6 +14,14 @@ Request:
   word (String): ... (The keyword you want to search),
   word_array: ... (The list of keywords available that you want to index)
 }
+
+Response (Array):
+[
+  {
+    word: ...
+    similarity: ... (in percentage)
+  }
+]
 ```
 
 ```
