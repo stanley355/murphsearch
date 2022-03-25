@@ -29,15 +29,15 @@ impl SimilaritySearchController {
 
     for word in payload.word_array {
       let mut similar_count = 0;
-      let mut while_count = 0;
+      let mut count = 0;
 
-      while while_count < word.len() {
-        let letter = word.chars().nth(while_count).unwrap();
+      while count < word.len() {
+        let letter = word.chars().nth(count).unwrap();
         if target_word.contains(letter) {
           similar_count += 1;
         }
 
-        while_count += 1;
+        count += 1;
       }
 
       let percentage = similar_count as f64 / word.len() as f64 * 100.0;
@@ -45,7 +45,10 @@ impl SimilaritySearchController {
         word: word,
         similarity: percentage,
       };
-      new_word_array.push(result);
+
+      if result.similarity > 49.0 {
+        new_word_array.push(result);
+      }
     }
 
     return new_word_array;
