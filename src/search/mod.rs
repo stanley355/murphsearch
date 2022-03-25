@@ -1,3 +1,3 @@
-pub mod route_handler;
+pub mod viewer;
 pub mod model;
 pub mod controller;

@@ -15,7 +15,7 @@ async fn main() -> std::io::Result<()> {
   HttpServer::new(|| {
     App::new().route(
       "/api/v1",
-      web::post().to(search::route_handler::find_similar_words),
+      web::post().to(search::viewer::find_similar_words),
     )
   })
   .bind(address)?
