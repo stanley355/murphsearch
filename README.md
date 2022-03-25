@@ -26,6 +26,6 @@ Response (Array):
 
 ```
 Example:
+![image](https://user-images.githubusercontent.com/53996155/160053706-4f6ec823-a1ab-42da-a376-445fd5e7ee83.png)
 
-Put image here stan
 ```
