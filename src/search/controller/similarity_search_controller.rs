@@ -14,7 +14,7 @@ impl SimilaritySearchController {
       if word.contains(target_word) {
         let result = SimilarityResult {
           word: word,
-          similarity: 100.0
+          similarity: 50.0
         };
         new_word_array.push(result);
       }
