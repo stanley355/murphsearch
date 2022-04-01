@@ -1,4 +1,4 @@
-# Morph URL
+# Morph Search
 Free and Lightweight search and indexing API to create perfect search result for your business. Morphsearch helps you search related keywords for user and your business inquires. ✓ Check it out!
 
 ## How to
